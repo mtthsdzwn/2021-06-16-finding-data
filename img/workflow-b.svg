@@ -1,0 +1,71 @@
+<svg
+  version="1.1"
+  baseProfile="full"
+  viewbox="0 0 410 230"
+  xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- arrowhead marker definition -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="0" refY="5"
+      markerWidth="5" markerHeight="5"
+      orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" stroke="#000000" stroke-width="1" fill="#333333"/>
+    </marker>
+
+  </defs>
+  <title>Workflow</title>
+
+<!-- Box 1-2 -->
+    <rect x="1" y="1" z="1" width="173" height="73" rx="4" ry="4" fill="#0089CF" stroke="none" fill-opacity=".2" />
+
+<!-- # 1. Topic Search -->
+  <rect x="5" y="5" width="100" height="20" rx="4" ry="4" fill="none" stroke="#000000" />
+  <text dominant-baseline="central" font-size="11px" fill="black">
+    <tspan x="10" y="14.5">Topic search</tspan>
+  </text>
+
+<!-- 2. Select, scan, & select again -->
+  <rect x="65" y="40" width="100" height="30" rx="4" ry="4" fill="none" stroke="#000000" />
+  <text dominant-baseline="central" font-size="11px" fill="black">
+    <tspan x="70" y="47.25" >Select, scan, and </tspan>
+    <tspan x="70" dy="14.5">select again</tspan>
+  </text>
+
+<!-- 3. Snowball search -->
+  <rect x="125" y="85" width="100" height="20" rx="4" ry="4" fill="none" stroke="#000000" />
+  <text dominant-baseline="central" font-size="11px" fill="black">
+    <tspan x="130" y="94.5">Snowball search</tspan>
+  </text>
+
+<!-- 4. Select -->
+  <rect x="185" y="125" width="100" height="20" rx="4" ry="4" fill="none" stroke="#000000" />
+  <text dominant-baseline="central" font-size="11px" fill="black">
+    <tspan x="190" y="134.5">Select</tspan>
+  </text>
+
+<!-- 5. Read and select -->
+  <rect x="245" y="165" width="100" height="20" rx="4" ry="4" fill="none" stroke="#000000" />
+  <text dominant-baseline="central" font-size="11px" fill="black">
+    <tspan x="250" y="174.5">Read and select</tspan>
+  </text>
+
+<!-- 6. Reference -->
+  <rect x="305" y="205" width="100" height="20" rx="4" ry="4" fill="none" stroke="#000000" />
+  <text dominant-baseline="central" font-size="11px" fill="black">
+    <tspan x="310" y="214.5">Reference</tspan>
+  </text>
+
+  <!-- Arrows -->
+  <!-- Down -->
+    <path d="M 30 30 Q 20 55 55 55" stroke="black" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 90 75 Q 80 95 115 95" stroke="black" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 150 110 Q 140 135 175 135" stroke="black" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 210 150 Q 200 175 235 175" stroke="black" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 270 190 Q 260 215 295 215" stroke="black" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Up -->
+    <path d="M 140 35 Q 145 15 120 15" stroke="black" fill="none" stroke-dasharray="5,3" />
+    <path d="M 320 160 Q 330 95 235 95" stroke="black" fill="none" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+    <path d="M 320 160 Q 355 5 120 15" stroke="black" fill="none" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+
+</svg>

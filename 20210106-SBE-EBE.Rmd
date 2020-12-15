@@ -1,0 +1,47 @@
+---
+title: "Finding Information"
+# subtitle: ""  
+author: 
+  - "Matthijs de Zwaan"
+date: '6 januari 2021'
+output:
+  xaringan::moon_reader:
+    yolo: false
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      ratio: '16:9'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(fig.retina = 3)
+```
+
+```{r xaringan-themer, include=FALSE, warning=TRUE}
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#0089CF",
+  base_font_size = "22px",
+  title_slide_background_image = "img/lost-at-sea.png",
+  title_slide_background_size = "cover",
+  title_slide_background_position = "right",
+  text_bold_color = "var(--text-color)",
+  extra_css = list(
+    ".title-slide h1, h2, h3" = list(
+      "text-align" = "left",
+      "vertical-align" = "top",
+      "text-transform" = "capitalize"
+    ),
+    ".title-slide h1" = list(
+      "margin-top" = "-110px"
+    ),
+    ".remark-slide-number" = list(
+      "display" = "none"
+    )
+  )
+)
+```
