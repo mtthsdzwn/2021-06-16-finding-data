@@ -269,3 +269,46 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 .remark-slide-number {
   display: none;
 }
+.card.list {
+  position: relative;
+  left: 20%;
+  box-shadow: 0 4px 8px 1px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 60%;
+  margin-bottom: 15px;
+}
+.card.switch {
+  box-shadow: 0 4px 8px 1px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 60%;
+  float: left;
+  margin-bottom: 15px;
+}
+.card.small {
+  position: absolute;
+  box-shadow: 0 4px 8px 1px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  margin: 15px;
+  padding: 5px;
+  background-color: rgba(0, 137, 207, 0.1);
+}
+.card h2 {
+  color: white;
+  background-color: rgba(0, 137, 207, 0.4);
+  font-size: 1.2rem;
+  padding: 5px;
+  margin-top: 0;
+  margin-bottom: 4px;
+  border-radius: 4px 4px 0 0;
+}
+.card.switch ul, div.card ol {
+  margin-bottom: 4px;
+  padding-bottom: 15px;
+}
+.card p {
+  margin: 10px;
+}
+.card.switch.right {
+  float: right;
+  text-align: left;
+}

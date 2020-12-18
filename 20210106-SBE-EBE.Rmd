@@ -41,7 +41,53 @@ style_mono_accent(
     ),
     ".remark-slide-number" = list(
       "display" = "none"
+    ),
+    ".card.list" = list(
+      "position" = "relative",
+      "left" = "20%",
+      "box-shadow" = "0 4px 8px 1px rgba(0,0,0,0.1)",
+      "border-radius" = "4px",
+      "width" = "60%",
+      "margin-bottom" = "15px"
+    ),
+    ".card.switch" = list(
+      "box-shadow" = "0 4px 8px 1px rgba(0,0,0,0.1)",
+      "border-radius" = "4px",
+      "width" = "60%",
+      "float" = "left",
+      "margin-bottom" = "15px"
+    ),
+    ".card.small" = list(
+      "position" = "absolute",
+      "box-shadow" = "0 4px 8px 1px rgba(0,0,0,0.1)",
+      "border-radius" = "4px",
+      "margin" = "15px",
+      "padding" = "5px",
+      "background-color" = "rgba(0, 137, 207, 0.1)"
+    ),
+    ".card h2" = list(
+      "color" = "white",
+      "background-color" = "rgba(0, 137, 207, 0.4)",
+      "font-size" = "1.2rem",
+      "padding" = "5px",
+      "margin-top" = "0",
+      "margin-bottom" = "4px",
+      "border-radius" = "4px 4px 0 0"
+    ),
+    ".card.switch ul, div.card ol" = list(
+      "margin-bottom" = "4px",
+      "padding-bottom" = "15px"
+    ),
+    ".card p" = list(
+      "margin" = "10px"
+    ),
+    ".card.switch.right" = list(
+      "float" = "right",
+      "text-align" = "left"
     )
+    # "div.card-switch ~ div.card1" = list(
+    #   "margin-top" = "0"
+    # )
   )
 )
 ```
@@ -50,78 +96,126 @@ class:inverse
 
 ---
 # Where can you find information?
-- Personal blogs, vlogs, etc
-- Company websites
-- (Inter)national organisations
-- Newspapers & magazines
-- Your friends after a night on the town
-- Wikipedia
-- Political parties
-- Social media
-- Academic articles
-- Television
-- Radio
-- Academic studies
-
+<span class="card small" style="top:28%;left:10%">Personal blogs, vlogs, etc</span>
+<span class="card small" style="top:35%;left:10%">Company websites</span>
+<span class="card small" style="top:48%;left:10%">(Inter)national organisations</span>
+<span class="card small" style="top:61%;left:10%">Newspapers & magazines</span>
+<span class="card small" style="top:71%;left:10%">Your friends after a night on the town</span>
+<span class="card small" style="top:88%;left:10%">Wikipedia</span>
+<span class="card small" style="top:28%;left:55%">Political parties</span>
+<span class="card small" style="top:35%;left:55%">Social media</span>
+<span class="card small" style="top:61%;left:55%">Documentaries</span>
+<span class="card small" style="top:88%;left:55%">Academic studies</span>
 
 ---
 
 # Aspects of information
 
- - Time versus trust
- - Objective versus subjective
- 
+<div class="card list" style="margin-top:100px;margin-bottom:50px;">
+<h2>Time versus trust</h2>
+<p>How difficult is it to check the information?</p>
+</div>
+
+<div class="card list">
+<h2>Objectives</h2>
+<p>Why was the information provided?</p>
+</div>
+
 ---
 
-# Where can you find information
+# Where can you find information?
 
- - No need to limit yourself to academic studies
- - Different sources can answer different kinds of questions
- - Be aware of your information source and its limits
+<div class="card list" style="position:relative;top:10%;">
+<h2>Search broadly</h2>
+<p>No need to limit yourself to academic studies</p>
+<p>Different sources can answer different kinds of questions</p>
+<p>Be aware of your information source and its limits.</p>
+</div>
  
 ---
 
 # Where can you find information?
 
-**Interesting topics & relevant discussions:**
-- Social media (Twitter)
-- Newspapers & magazines
+<div class="card switch">
+<h2>Interesting topics & relevant discussions</h2>
+<p>
+Social media (Twitter)</br>
+Newspapers & magazines
+</p>
+</div>
 
-**Opinions & points of view:**
-- NGOs, political organizations, companies
+<div class="card switch right">
+<h2>Opinions & points of view</h2>
+<p>NGOs, political organizations, companies</p>
+</div>
 
-**Background info:**
-- Wikipedia
-- Textbooks, handbooks
+<div class="card switch">
+<h2>Background info</h2>
+<p>Wikipedia</br>
+Textbooks, handbooks</p>
+</div>
 
-**Detailed analysis, &ldquo;proof&rdquo;**
-- Academic books/articles
-
+<div class="card switch right">
+<h2>Detailed analysis, &ldquo;proof&rdquo;</h2>
+<p>Academic books/articles</p>
+</div>
 ---
 
 class:inverse
-# Finding information from<br/>different sources
+# Finding information<br>from different sources
 
 ---
 
-# Finding information from<br/>different sources
-- Newspapers & magazines
-- Academic articles
-- Academic books
-
+# Finding information<br>from different sources
+<div class="card list">
+<h2>We will discuss:</h2>
+<p>
+Newspapers & magazines<br>
+Academic articles<br>
+Academic books<br>
+</p>
+</div>
 ---
 
 # Access to information
-- On campus
-- Off campus
+<div class="card list" style="margin-top:80px;margin-bottom:50px;">
+<h2>On campus</h2>
+<p>
+Should have access automatically<br>
+If not: Log on to VUnet<br>
+But: no one is on campus...
+</p>
+</div>
+
+<div class="card list">
+<h2>Off campus</h2>
+<p>
+Log on to VUnet<br>
+Search materials using <a href="#libsearch">Libsearch</a><br>
+See <a href="https://ub.vu.nl/en/search-help/off-campus-access/index.aspx" target=_blank>this information</a>.    
+</p>
+</div>
 
 ---
 
 # Finding information in<br/>magazines & newspapers
 
+- browse
+- title website
+- Nexis Uni
+
 ---
+name:nexis
 
 # Nexis Uni
+
+![](img/nexis-uni-1.png)
+--
+![](img/nexis-uni-2.png)
+---
+ <iframe width="420" height="315"
+src="https://www.youtube.com/embed/YiT94DEAcw0?controls=0">
+</iframe> 
 
 ---
 
@@ -131,12 +225,14 @@ class:inverse
 - Scopus
 
 ---
+name:google
 
 # Google Scholar
 
 pro and con
 
 ---
+name:libsearch
 
 # VU Libsearch
 
@@ -167,6 +263,7 @@ class:inverse
 ---
 # A suggested workflow
 
+.center[
 <svg
   version="1.1"
   baseProfile="full"
@@ -236,6 +333,7 @@ class:inverse
   <path d="M 320 160 Q 355 5 120 15" stroke="black" fill="none" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
 
 </svg>
+]
 ---
 # Finding information:<br/>Tips & tricks
 **Not a linear process:**
