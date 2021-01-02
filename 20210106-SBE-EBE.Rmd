@@ -1,6 +1,5 @@
 ---
 title: "Finding Information"
-# subtitle: ""  
 author: 
   - "Matthijs de Zwaan"
 date: '6 januari 2021'
@@ -25,100 +24,130 @@ knitr::opts_chunk$set(fig.retina = 3)
 library(xaringanthemer)
 style_mono_accent(
   base_color = "#0089CF",
-  base_font_size = "22px",
+  base_font_size = "24px",
+  header_h1_font_size = "2.5rem",
+  header_h2_font_size = "2rem",
+  header_h3_font_size = "1.5rem",
   title_slide_background_image = "img/lost-at-sea.png",
   title_slide_background_size = "cover",
   title_slide_background_position = "right",
   text_bold_color = "var(--text-color)",
   extra_css = list(
-    ".title-slide h1, h2, h3" = list(
-      "text-align" = "left",
-      "vertical-align" = "top",
-      "text-transform" = "capitalize"
-    ),
-    ".title-slide h1" = list(
-      "margin-top" = "-110px"
-    ),
-    ".remark-slide-number" = list(
-      "display" = "none"
-    ),
-    ".card.list" = list(
-      "position" = "relative",
-      "left" = "20%",
-      "box-shadow" = "0 4px 8px 1px rgba(0,0,0,0.1)",
-      "border-radius" = "4px",
-      "width" = "60%",
-      "margin-bottom" = "15px"
-    ),
-    ".card.switch" = list(
-      "box-shadow" = "0 4px 8px 1px rgba(0,0,0,0.1)",
-      "border-radius" = "4px",
-      "width" = "60%",
-      "float" = "left",
-      "margin-bottom" = "15px"
-    ),
-    ".card.small" = list(
-      "position" = "absolute",
-      "box-shadow" = "0 4px 8px 1px rgba(0,0,0,0.1)",
-      "border-radius" = "4px",
-      "margin" = "15px",
-      "padding" = "5px",
-      "background-color" = "rgba(0, 137, 207, 0.1)"
-    ),
-    ".card h2" = list(
-      "color" = "white",
-      "background-color" = "rgba(0, 137, 207, 0.4)",
-      "font-size" = "1.2rem",
-      "padding" = "5px",
-      "margin-top" = "0",
-      "margin-bottom" = "4px",
-      "border-radius" = "4px 4px 0 0"
-    ),
-    ".card.switch ul, div.card ol" = list(
-      "margin-bottom" = "4px",
-      "padding-bottom" = "15px"
-    ),
-    ".card p" = list(
-      "margin" = "10px"
-    ),
-    ".card.switch.right" = list(
-      "float" = "right",
-      "text-align" = "left"
-    )
-    # "div.card-switch ~ div.card1" = list(
-    #   "margin-top" = "0"
-    # )
+  ".title-slide h1, h2, h3" = list(
+    "text-align" = "left",
+    "vertical-align" = "top",
+    "text-transform" = "capitalize"
+  ),
+  ".title-slide h1" = list(
+  "margin-top" = "-110px"
+  ),
+  ".remark-slide-number" = list(
+  "display" = "none"
+  ),
+  ".card.list" = list(
+    "position" = "relative",
+    "left" = "20%",
+    "box-shadow" = "0 4px 8px 1px rgba(0,0,0,0.05)",
+    "border-radius" = "4px",
+    "width" = "65%",
+    "margin-bottom" = "15px"
+  ),
+  ".card.switch" = list(
+    "position" = "relative",
+    "box-shadow" = "0 4px 8px 1px rgba(0,0,0,0.05)",
+    "border-radius" = "4px",
+    "width" = "65%",
+    "float" = "left",
+    "margin-bottom" = "15px"
+  ),
+  ".card.small" = list(
+    "position" = "absolute",
+    "border-radius" = "4px",
+    "margin" = "15px",
+    "padding" = "5px",
+    "background-color" = "rgba(0, 137, 207, 0.1)"
+  ),
+  ".card.highlight" = list(
+    "background-color" = "rgba(136, 63, 160, 0.1)"
+  ),
+  ".card h2" = list(
+    "color" = "white",
+    "background-color" = "rgba(0, 137, 207, 0.4)",
+    "font-size" = "1.1rem",
+    "padding" = "5px",
+    "margin-top" = "0",
+    "margin-bottom" = "4px",
+    "border-radius" = "4px 4px 0 0"
+  ),
+  ".card.switch ul, div.card ol" = list(
+  "margin-bottom" = "4px",
+  "padding-bottom" = "15px"
+  ),
+  ".card p" = list(
+  "margin" = "10px"
+  ),
+  ".card.switch.right" = list(
+  "float" = "right",
+  "text-align" = "left"
   )
+  # "div.card-switch ~ div.card1" = list(
+  # "margin-top" = "0"
+  # )
+)
 )
 ```
 class:inverse
+
+# Why do you need information?
+---
+
+# Why do you need information?
+<div class="card switch">
+<h2>Context</h2>
+<p>How does this work fit into other discussions?</p>
+<p>What arguments were made previously?</p>
+</div>
+
+<div class="card switch right">
+<h2>Motivation</h2>
+<p>Why is this work important / interesting?</p>
+</div>
+
+<div class="card switch">
+<h2>Novelty</h2>
+<p>You can only argue that your work adds something new if you first show what has been done before.</p>
+</div>
+
+---
+class:inverse
+
 # Where can you find information?
 
 ---
-# Where can you find information?
-<span class="card small" style="top:28%;left:10%">Personal blogs, vlogs, etc</span>
-<span class="card small" style="top:35%;left:10%">Company websites</span>
-<span class="card small" style="top:48%;left:10%">(Inter)national organisations</span>
-<span class="card small" style="top:61%;left:10%">Newspapers & magazines</span>
-<span class="card small" style="top:71%;left:10%">Your friends after a night on the town</span>
-<span class="card small" style="top:88%;left:10%">Wikipedia</span>
-<span class="card small" style="top:28%;left:55%">Political parties</span>
-<span class="card small" style="top:35%;left:55%">Social media</span>
-<span class="card small" style="top:61%;left:55%">Documentaries</span>
-<span class="card small" style="top:88%;left:55%">Academic studies</span>
 
+# Where can you find information?
+<span class="card small" style="top:48%;left:27%">Personal blogs, vlogs, etc</span>
+<span class="card small" style="top:35%;left:74%">Company websites</span>
+<span class="card small" style="top:26%;left:69%">(Inter)national organisations</span>
+<span class="card small" style="top:30%;left:11%">Newspapers & magazines</span>
+<span class="card small" style="top:60%;left:62%">Your friends after a night<br>on the town</span>
+<span class="card small" style="top:40%;left:58%">Wikipedia</span>
+<span class="card small" style="top:80%;left:22%">Political parties</span>
+<span class="card small" style="top:61%;left:26%">Social media</span>
+<span class="card small" style="top:29%;left:53%">Documentaries</span>
+<span class="card small" style="top:72%;left:51%">Academic studies</span>
 ---
 
 # Aspects of information
 
 <div class="card list" style="margin-top:100px;margin-bottom:50px;">
-<h2>Time versus trust</h2>
-<p>How difficult is it to check the information?</p>
+    <h2>Time versus trust</h2>
+    <p>How difficult is it to check the information?<br>How much time does it take?</p>
 </div>
 
 <div class="card list">
-<h2>Objectives</h2>
-<p>Why was the information provided?</p>
+    <h2>Objectives</h2>
+    <p>Why was the information provided?<br>Persuasion or information?</p>
 </div>
 
 ---
@@ -126,242 +155,464 @@ class:inverse
 # Where can you find information?
 
 <div class="card list" style="position:relative;top:10%;">
-<h2>Search broadly</h2>
-<p>No need to limit yourself to academic studies</p>
-<p>Different sources can answer different kinds of questions</p>
-<p>Be aware of your information source and its limits.</p>
+    <h2>Search broadly</h2>
+    <p>No need to limit yourself to academic studies</p>
+    <p>Different sources can answer different kinds of questions</p>
+    <p>Be aware of your information source and its limits.</p>
 </div>
- 
+
 ---
 
 # Where can you find information?
 
 <div class="card switch">
-<h2>Interesting topics & relevant discussions</h2>
-<p>
-Social media (Twitter)</br>
-Newspapers & magazines
-</p>
+    <h2>Interesting topics & relevant discussions</h2>
+    <p>
+        Social media (Twitter)</br>
+        Newspapers & magazines
+    </p>
 </div>
 
 <div class="card switch right">
-<h2>Opinions & points of view</h2>
-<p>NGOs, political organizations, companies</p>
+    <h2>Opinions & points of view</h2>
+    <p>NGOs, political organizations, companies</p>
 </div>
 
 <div class="card switch">
-<h2>Background info</h2>
-<p>Wikipedia</br>
-Textbooks, handbooks</p>
+    <h2>Background info</h2>
+    <p>Wikipedia</br>
+        Textbooks, handbooks</p>
 </div>
 
 <div class="card switch right">
-<h2>Detailed analysis, &ldquo;proof&rdquo;</h2>
-<p>Academic books/articles</p>
+    <h2>Detailed analysis, &ldquo;proof&rdquo;</h2>
+    <p>Academic books/articles</p>
 </div>
 ---
 
 class:inverse
+
 # Finding information<br>from different sources
 
 ---
 
 # Finding information<br>from different sources
-<div class="card list">
-<h2>We will discuss:</h2>
-<p>
-Newspapers & magazines<br>
-Academic articles<br>
-Academic books<br>
-</p>
-</div>
+<span class="card small" style="top:48%;left:27%">Personal blogs, vlogs, etc</span>
+<span class="card small" style="top:35%;left:74%">Company websites</span>
+<span class="card small" style="top:26%;left:69%">(Inter)national organisations</span>
+<span class="card small highlight" style="top:30%;left:11%">Newspapers & magazines</span>
+<span class="card small" style="top:60%;left:62%">Your friends after a night<br>on the town</span>
+<span class="card small" style="top:40%;left:58%">Wikipedia</span>
+<span class="card small" style="top:80%;left:22%">Political parties</span>
+<span class="card small" style="top:61%;left:26%">Social media</span>
+<span class="card small" style="top:29%;left:53%">Documentaries</span>
+<span class="card small highlight" style="top:72%;left:51%">Academic studies</span>
+
 ---
+layout: false
 
 # Access to information
+
 <div class="card list" style="margin-top:80px;margin-bottom:50px;">
-<h2>On campus</h2>
-<p>
-Should have access automatically<br>
-If not: Log on to VUnet<br>
-But: no one is on campus...
-</p>
+    <h2>On campus</h2>
+    <p>
+        Should have access automatically<br>
+        If not: Log on to VUnet<br>
+        But: <i>no one is on campus...</i>
+    </p>
 </div>
 
 <div class="card list">
-<h2>Off campus</h2>
-<p>
-Log on to VUnet<br>
-Search materials using <a href="#libsearch">Libsearch</a><br>
-See <a href="https://ub.vu.nl/en/search-help/off-campus-access/index.aspx" target=_blank>this information</a>.    
-</p>
+    <h2>Off campus</h2>
+    <p>
+        Log on to VUnet<br>
+        Search materials using <a href="#libsearch">Libsearch</a><br>
+        See <a href="https://ub.vu.nl/en/search-help/off-campus-access/index.aspx" target=_blank>this information</a>.
+    </p>
 </div>
 
 ---
+name: template-nexis
 
-# Finding information in<br/>magazines & newspapers
+# Finding information in<br>magazines & newspapers
 
-- browse
-- title website
-- Nexis Uni
+<div class="card list">
+    <h2>Options</h2>
+    <p>Browse the paper</p>
+    <p>Search the website</p>
+    <p>Search Nexis Uni</p>
+</div>
 
 ---
 name:nexis
 
 # Nexis Uni
 
-![](img/nexis-uni-1.png)
---
-![](img/nexis-uni-2.png)
+<a href="http://linker2.worldcat.org/?jHome=https%3A%2F%2Fvu-nl.idm.oclc.org%2Flogin%3Furl%3Dhttp%3A%2F%2Fwww.nexisuni.com&linktype=best">![](img/nexis-uni.png)</a>
+
 ---
- <iframe width="420" height="315"
-src="https://www.youtube.com/embed/YiT94DEAcw0?controls=0">
-</iframe> 
+# Getting started with Nexis Uni
+
+.center[
+These tutorials can help you find your way in Nexis Uni.
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/YiT94DEAcw0?controls=0"></iframe>
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/MYaheJh57N0?controls=0"></iframe>
+
+]
+
+- Also see [https://libguides.vu.nl/nexis-uni]()
+- [Skip ahead](#search-title) for search methods
 
 ---
 
 # Finding academic publications
-- Google
-- Libsearch
-- Scopus
 
+<a href="#google">
+    <img src="img/google-scholar.png" alt="Google Scholar logo" style="display:block;position:absolute;left:10%;top:25%;width:500;">
+</a>
+
+<a href="#libsearch">
+    <img src="img/libsearch.png" alt="Libsearch logo" style="display:block;position:absolute;left:30%;top:58%;width:500;">
+</a>
+
+<a href="#scopus">
+    <img src="img/scopus.jpg" alt="Scopus logo" style="display:block; position:absolute; left:55%; top:75%; width:500;">
+</a>
 ---
 name:google
 
-# Google Scholar
+# Finding academic publications:<br>Google Scholar
 
-pro and con
+<a href="https://scholar.google.nl/" target=_blank>
+    <img src="img/google-scholar.png" alt="Google Scholar logo" style="display:block; margin-left: auto;margin-right:auto; width:40%;">
+</a>
 
+<div style="position:absolute; left: 30%; width:60%; bottom:5%">
+    <p>&#x1F60D; Easy to use</p>
+
+    <p>&#x1F914; Results not consistent or transparent</p>
+
+    <p>&#x1F914; Many sources, no quality assessment</p>
+</div>
 ---
 name:libsearch
 
-# VU Libsearch
+# Finding academic publications:<br>VU Libsearch
 
-pro and con
+<a href="https://vu.on.worldcat.org/discovery" target=_blank>
+    <img src="img/libsearch.png" alt="Libsearch logo" style="display:block; margin-left: auto;margin-right: auto; width:40%;">
+</a>
+
+<div style="position:absolute; left: 30%;width:60%;bottom:5%">
+    <p>&#x1F60D; Access & availability of materials are clear</p>
+    <p>&#x1F60D; Includes books, data, other resources</p>
+    <p>&#x1F914; Not easy to use</p>
+</div>
 
 ---
+name:scopus
 
-# Scopus
+# Finding academic publications:<br>Scopus
 
-- pro and con
-- more detail
+<a href="https://libguides.vu.nl/scopus" target=_blank>
+    <img src="img/scopus.jpg" alt="Scopus logo" style="display:block; margin-left: auto;margin-right: auto; width:40%;">
+</a>
+
+<div style="position:absolute; left: 30%; width:60%;bottom:5%">
+    <p>&#x1F60D; Easy to use.</p>
+    <p>&#x1F60D; &ldquo;Advanced search&rdquo; very good for filtering</p>
+    </p>&#x1F914; <span style="text-align:left;">Only <a href="https://en.wikipedia.org/wiki/Scholarly_peer_review" target=_blank>peer-reviewed</a> materials:<br>
+        &emsp; - Indication of quality<br>
+        &emsp; - Not very recent
+        </p>
+</div>
+
+--
+
+<img src="img/recommended.png" style="opacity:.7;width:20%;position:absolute;right:20%;top:30%;z-index:1;transform:rotate(355deg);">
 
 ---
+# Getting started with Scopus
 
+.center[
+<iframe width="420" height="315" src="https://www.youtube.com/embed/-VE3ADZvoUY?controls=0"></iframe>
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/0oQ5qsDMoFE?controls=0"></iframe>
+]
+
+- Scopus provides a number of other [tutorials](https://service.elsevier.com/app/answers/detail/a_id/14799/supporthub/scopus/)
+- [Useful guide](https://libguides.library.uu.nl/scopus_en/) (<strong>NB!</strong> From Utrecht University Library, links do not always work for VU students!)
+- [Skip ahead](#search-title) for search methods
+---
+name:search-title
 class:inverse
-# How to search 
+
+# How to search
 
 ---
+layout: true
 
 # How to search: &ldquo;building blocks&rdquo;
-## Boolean operators
-## Other operators
+
+---
+<div class="pull-left">
+
+    <!-- Venn diagram 1:set up -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 110">
+        <circle cx="55" cy="55" r="50" style="fill:none; stroke:#0089CF;stroke-width:2" />
+
+        <text x="55" y="55" style="font-size:.65rem; text-anchor: middle; dominant-baseline: middle">
+            A:Brexit
+        </text>
+
+        <circle cx="167" cy="55" r="50" style="fill:none; stroke:#0089CF;stroke-width:2" />
+
+        <text x="167" y="55" style="font-size:.65rem; text-anchor: middle; dominant-baseline: middle">
+            B:Migration
+        </text>
+    </svg>
+
+</div>
+
+<div class="pull-right">
+
+    <div class="card switch right" style="width:100%;">
+        <h2>Example:</h2>
+        <p>How will <em>Brexit</em> affect <em>migration</em> patterns?</p>
+    </div>
+</div>
 
 ---
 
+<div class="pull-left">
+    <!-- Venn diagram 2:A AND B -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 110">
+        <circle cx="79" cy="55" r="50" style="fill:none; stroke:#0089CF;stroke-width:2;" />
+
+        <circle cx="143" cy="55" r="50" style="fill:none; stroke:#0089CF;stroke-width:2;" />
+
+        <text x="69" y="55" style="font-size:.65rem; fill:#000000;text-anchor:middle; dominant-baseline:middle;">
+            A
+        </text>
+
+        <text x="153" y="55" style="font-size:.65rem; fill:#000000;text-anchor:middle; dominant-baseline:middle;">
+            B
+        </text>
+
+        <path d="m 108.4236,89.437941 c -7.26737,-7.326681 -12.019366,-16.6304 -13.696252,-26.815277 -0.652872,-3.965339 -0.652872,-11.279989 0,-15.245328 1.677215,-10.186874 6.440672,-19.515688 13.716792,-26.863111 l 2.50908,-2.533668 2.11058,2.081567 c 6.61989,6.528884 11.13458,14.377824 13.35059,23.210446 1.81282,7.225601 1.81282,16.229259 0,23.454859 -2.21497,8.828479 -6.73137,16.682354 -13.34279,23.202691 l -2.10278,2.073812 z" style="fill:#0089CF; stroke:#0089CF;stroke-width:2;" />
+
+    </svg>
+</div>
+
+<div class="pull-right">
+    <div class="card switch right" style="width:100%;">
+        <h2>&ldquo;Boolean operators&rdquo;: <b>AND</b></h2>
+        <p><i>A</i> AND <i>B</i></p>
+        <p><i>Brexit</i> AND <i>migration</i></p>
+        <p>Selects articles that mention <i>both</i> Brexit and migration.</p>
+        <p>Fewer results, more precise.</p>
+    </div>
+</div>
+---
+
+<div class="pull-left">
+    <!-- Venn diagram 3:A OR B -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 110">
+        <circle cx="79" cy="55" r="50" style="fill:#0089CF; stroke:#0089CF;stroke-width:2;" />
+        <circle cx="143" cy="55" r="50" style="fill:#0089CF; stroke:#0089CF;stroke-width:2;" />
+        <text x="69" y="55" style="font-size:.65rem; fill:white;text-anchor:middle; dominant-baseline:middle;">
+            A
+        </text>
+        <text x="153" y="55" style="font-size:.65rem; fill:white;text-anchor:middle; dominant-baseline:middle;">
+            B
+        </text>
+    </svg>
+</div>
+
+<div class="pull-right">
+    <div class="card switch right" style="width:100%;">
+        <h2>&ldquo;Boolean operators&rdquo;: <b>OR</b></h2>
+        <p><i>A</i> OR <i>B</i></p>
+        <p><i>Brexit</i> OR <i>migration</i></p>
+        <p>Selects articles that mention <i>either</i> Brexit or migration.</p>
+        <p>More results, less precise.</p>
+    </div>
+</div>
+---
+<div class="pull-left">
+    <!-- Venn diagram 4:A AND B AND C -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 155">
+
+        <circle cx="54" cy="54" r="50" style="fill:none; stroke:#0089CF;stroke-width:2;" />
+        <circle cx="118" cy="54" r="50" style="fill:none; stroke:#0089CF;stroke-width:2;" />
+        <circle cx="86" cy="100" r="50" style="fill:none; stroke:#0089CF;stroke-width:2;" />
+        <text x="45" y="54" style="font-size:.65rem; fill:#000000;text-anchor:middle; dominant-baseline:middle;">
+            A
+        </text>
+        <text x="127" y="54" style="font-size:.65rem; fill:#000000;text-anchor:middle; dominant-baseline:middle;">
+            B
+        </text>
+        <text x="86" y="109" style="font-size:.65rem; fill:#000000;text-anchor:middle; dominant-baseline:middle;">
+            C
+        </text>
+        <path d="M 83.2594,88.287999 C 77.137814,82.010888 72.950815,74.689762 70.819746,66.5368 69.748383,62.438017 69.39371,60.076543 69.361399,56.826874 l -0.02729,-2.744388 2.27655,-0.728637 c 9.009037,-2.883448 19.827897,-2.883159 28.828911,7.72e-4 l 2.27655,0.729408 -0.0364,2.42157 c -0.16694,11.097295 -5.524178,23.284926 -14.000179,31.850182 -1.286251,1.299792 -2.498398,2.363409 -2.69366,2.363585 -0.195263,1.79e-4 -1.422171,-1.093936 -2.726464,-2.431367 z" style="fill:#0089CF; stroke:#0089CF;stroke-width:2;" />
+
+    </svg>
+
+</div>
+
+<div class="pull-right">
+
+    <div class="card switch right" style="width:100%;">
+        <h2>&ldquo;Boolean operators&rdquo;</h2>
+        <p><i>A</i> AND <i>B</i> AND <i>C</i></p>
+        <p><i>Brexit</i> AND <i>migration</i> AND &quot;<i>economic growth</i>&quot;</p>
+        <p>Combine as many search terms as needed.</p>
+    </div>
+</div>
+---
+<!-- Diagram: How to use AND and OR -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 75">
+    <defs>
+        <marker id="arrow" viewBox="0 0 20 10" refX="1" refY="5" markerUnits="strokeWidth" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" style="fill:#0089CF; stroke:none;" >
+        </marker>
+</defs>
+    <g id="g-brexit">
+        <rect x="1" y="23.5" width="50" height="20" style="fill: #0089CF; fill-opacity:0.8; stroke: #0089CF; stroke-width:1; stroke-opacity: 1;" />
+        <text x="6" y="33.5" style="font-size: .6rem; fill-opacity: 1; stroke: none;fill: white; text-anchor: start; dominant-baseline: middle;">
+            Brexit
+        </text>
+    </g>
+    <g id="g-and">
+        <path d="m 61 33.5 h 40" style="fill: #0089CF;fill-opacity: 1;stroke: #0089CF;stroke-width: 2;stroke-opacity: 1;marker-start: url(#arrow);marker-end: url(#arrow);" />
+        <text x="81" y="33.5" style="font-size: .6rem;fill-opacity: 1;stroke: none;fill:#000000;text-anchor: middle;dominant-baseline: alphabetic;">
+            AND
+        </text>
+    </g>
+    <g id="g-or">
+        <path d="m 114 10 v 40" style="fill: #0089CF;fill-opacity: 1;stroke: #0089CF;stroke-width: 2;stroke-opacity: 1;marker-start: url(#arrow);marker-end: url(#arrow);" />
+        <text x="114" y="25" transform="rotate(90 114,25)" style="font-size: .6rem;fill-opacity: 1;stroke: none;fill:#000000;text-anchor: middle;dominant-baseline: alphabetic;">
+            OR
+        </text>
+    </g>
+    <g id="g-migration">
+        <rect x="131" y="5" width="120" height="20" style="fill: #0089CF; fill-opacity:0.8; stroke: #0089CF; stroke-width:1; stroke-opacity: 1;" />
+        <text x="133" y="15" style="font-size: .6rem; fill-opacity: 1; stroke: none;fill: white; text-anchor: start; dominant-baseline: middle;">
+            migration
+        </text>
+    </g>
+    <g id="g-mobility">
+        <rect x="131" y="42" width="120" height="20" style="fill: #0089CF; fill-opacity:0.8; stroke: #0089CF; stroke-width:1; stroke-opacity: 1;" />
+        <text x="133" y="52" style="font-size: .6rem; fill-opacity: 1; stroke: none;fill: white; text-anchor: start; dominant-baseline: middle;">
+            "labo?r mobility"
+        </text>
+    </g>
+</svg>
+
+- Use &ldquo;AND&rdquo; to combine the key concepts of your research question.
+- Use &ldquo;OR&rdquo; to combine the different terms that can be used to describe those concepts.<br>Different authors can use different words to describe similar concepts!
+- Start broadly, narrow down results as necessary.
+---
+<div class="card list"><h2>Parentheses <b>(</b>...<b>)</b></h2><p>For grouping: <span style="font-family:monospace">A AND (B OR C)</span></p></div>
+<div class="card list"><h2>Quotes <b>&quot;</b>...<b>&quot;</b></h2><p>For phrases: <span style="font-family:monospace">"labour mobility"</span></p></div>
+<div class="card list"><h2>Wildcards <b>?</b>,<b>&#42;</b></h2><p>For one or more characters: <span style="font-family:monospace">colo?ur</span></p></div>
+<div class="card list"><h2>Careful!</h2><p>Exact usage may differ between search engines!</p></div>
+---
+layout:false
+name: snowball
 # How to search: &ldquo;snowball&rdquo;
+<div class="card switch">
+<h2>Backward snowball</h2>
+<p>Which articles were used for this research?</p>
+<p>Check the list of references at the end of an article.</p>
+</div>
+
+<div class="card switch right">
+<h2>Forward snowball</h2>
+<p>How was this article used in other research?</p>
+<p>&ldquo;Cited by&rdquo; options in eg Scopus or Google Scholar</p>
+</div>
+---
+template:snowball
+<div style="position:absolute;width:100%; display:flex; justify-content:center;">
+<iframe src="https://giphy.com/embed/V0cSLsFbRO7SM" width="576" height="375" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<p><a href="https://giphy.com/gifs/V0cSLsFbRO7SM">&ensp;via GIPHY</a></p>
+</div>
+
+---
+template: snowball
+<div class="card switch">
+<h2 style="background-color:red">Useful, but dangerous</h2>
+<p>After only two &ldquo;generations&rdquo;, already hundreds of references</p>
+<p>Easy to get lost if you don't know what you're looking for.</p>
+</div>
 
 ---
 # A suggested workflow
 
-.center[
-<svg
-  version="1.1"
-  baseProfile="full"
-  viewbox="0 0 410 230" width="80%"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="xMinYMin">
-
-  <defs>
-    <!-- arrowhead marker definition -->
-    <marker id="arrow" viewBox="0 0 10 10" refX="0" refY="5"
-      markerWidth="5" markerHeight="5"
-      orient="auto-start-reverse">
-    <path d="M 0 0 L 10 5 L 0 10 z" stroke="black" stroke-width="1" fill="black"/>
-    </marker>
-
-  </defs>
-  <title>Workflow</title>
-
-<!-- # 1. Topic Search -->
-  <rect x="5" y="5" width="100" height="20" rx="4" ry="4" fill="none" stroke="#000000" />
-  <text dominant-baseline="central" font-size="11px" fill="black">
-    <tspan x="10" y="14.5">Topic search</tspan>
-  </text>
-
-<!-- 2. Select, scan, & select again -->
-  <rect x="65" y="40" width="100" height="30" rx="4" ry="4" fill="none" stroke="#000000" />
-  <text dominant-baseline="central" font-size="11px" fill="black">
-    <tspan x="70" y="47.25" >Select, scan, and </tspan>
-    <tspan x="70" dy="14.5">select again</tspan>
-  </text>
-
-<!-- 3. Snowball search -->
-  <rect x="125" y="85" width="100" height="20" rx="4" ry="4" fill="none" stroke="#000000" />
-  <text dominant-baseline="central" font-size="11px" fill="black">
-    <tspan x="130" y="94.5">Snowball search</tspan>
-  </text>
-
-<!-- 4. Select -->
-  <rect x="185" y="125" width="100" height="20" rx="4" ry="4" fill="none" stroke="#000000" />
-  <text dominant-baseline="central" font-size="11px" fill="black">
-    <tspan x="190" y="134.5">Select</tspan>
-  </text>
-
-<!-- 5. Read and select -->
-  <rect x="245" y="165" width="100" height="20" rx="4" ry="4" fill="none" stroke="#000000" />
-  <text dominant-baseline="central" font-size="11px" fill="black">
-    <tspan x="250" y="174.5">Read and select</tspan>
-  </text>
-
-<!-- 6. Reference -->
-  <rect x="305" y="205" width="100" height="20" rx="4" ry="4" fill="none" stroke="#000000" />
-  <text dominant-baseline="central" font-size="11px" fill="black">
-    <tspan x="310" y="214.5">Reference</tspan>
-  </text>
-
-<!-- Arrows -->
-<!-- Down -->
-  <path d="M 30 30 Q 20 55 55 55" stroke="black" fill="none" marker-end="url(#arrow)"/>
-  <path d="M 90 75 Q 80 95 115 95" stroke="black" fill="none" marker-end="url(#arrow)"/>
-  <path d="M 150 110 Q 140 135 175 135" stroke="black" fill="none" marker-end="url(#arrow)"/>
-  <path d="M 210 150 Q 200 175 235 175" stroke="black" fill="none" marker-end="url(#arrow)"/>
-  <path d="M 270 190 Q 260 215 295 215" stroke="black" fill="none" marker-end="url(#arrow)"/>
-
-<!-- Up -->
-  <path d="M 140 35 Q 145 15 120 15" stroke="black" fill="none" stroke-dasharray="5,3" />
-  <path d="M 320 160 Q 330 95 235 95" stroke="black" fill="none" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
-  <path d="M 320 160 Q 355 5 120 15" stroke="black" fill="none" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
-
-</svg>
-]
+<div style="display:flex; justify-content:center; align-items: center;">
+<img src="img/workflow-1.svg" alt="" width="80%">
+<div>
 ---
-# Finding information:<br/>Tips & tricks
-**Not a linear process:**
-Adjust your search terms as needed
-You will need more than 15 minutes (but in the long term...)
+name: tips
+# Finding information: Tips &amp; tricks
 
-**Make a logbook!**
-Keep track of your searches
+<div class="card switch" style="width:70%">
+    <h2>Not a linear process</h2>
+    <p>Adjust your search terms as needed. Takes time!</p>
+</div>
 
-**Each search engine differs slightly**
-Check the manuals
+<div class="card switch right" style="width:70%">
+    <h2>Make a logbook!</h2>
+    <p>Keep track of your searches.<br>
+    Some search engines provide options if you make an account.</p>
+</div>
 
-**&ldquo;[Good artists copy; great artists steal](https://quoteinvestigator.com/2013/03/06/artists-steal/)&rdquo;**
-Good academics steal and leave fingerprints
+<div class="card switch" style="width:70%">
+    <h2>Each search engine differs slightly</h2>
+    <p>Check the manuals</p>
+</div>
 
+<div class="card switch right" style="width:70%">
+    <h2>&ldquo;<a href="https://quoteinvestigator.com/2013/03/06/artists-steal/">Good artists copy; great artists steal</a>&rdquo;</h2>
+    <p>Good academics steal and leave fingerprints.</br>
+    {{ content }}&nbsp;</p>
+</div>
 ---
+template: tips
+
+<span style="color:red;">Do not plagiarize!</span>
+---
+
 # Finding information: more support
-**ub.vu.nl**
-Information, opening hours, news
 
-**Online guides**
-For more tips & tricks 
+<div class="card switch">
+    <h2 style="text-transform:lowercase;"><a href="https://ub.vu.nl">ub.vu.nl</a></h2>
+    <p>Information, opening hours, news</p>
+</div>
 
-**Events & workshops**
-Finding literature and data, reference software, ...
+<div class="card switch right">
+    <h2><a href="https://libguides.vu.nl/">Online guides</a></h2>
+    <p>For more tips & tricks</p>
+</div>
 
-**vraag.ub@vu.nl**
-For questions on access, availability
+<div class="card switch">
+    <h2><a href="https://vu-nl.libcal.com/">Events & workshops</a></h2>
+    <p>Finding literature and data, reference software, ...</p>
+</div>
 
-
-
+<div class="card switch right">
+    <h2 style="text-transform:lowercase;"><a href="mailto:vraag.ub@vu.nl">vraag.ub@vu.nl</a></h2>
+    <p>For questions on access, availability, etc.</p>
+</div>
+---
+background-image:url("img/lost-at-sea.png")
+background-position: center
+background-size: cover
+---
+background-image:url("img/in-control.png")
+background-position: center
+background-size: cover
