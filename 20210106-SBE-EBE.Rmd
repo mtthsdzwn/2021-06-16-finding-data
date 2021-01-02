@@ -142,7 +142,8 @@ class:inverse
 
 <div class="card list" style="margin-top:100px;margin-bottom:50px;">
     <h2>Time versus trust</h2>
-    <p>How difficult is it to check the information?<br>How much time does it take?</p>
+    <p>How difficult is it to check the information?</p>
+    <p>How much time does it take?</p>
 </div>
 
 <div class="card list">
