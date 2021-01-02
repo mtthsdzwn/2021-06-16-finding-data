@@ -555,7 +555,7 @@ template: snowball
 # A suggested workflow
 
 <div style="display:flex; justify-content:center; align-items: center;">
-<img src="img/workflow-1.svg" alt="" width="80%">
+<img src="img/workflow.svg" alt="" width="80%">
 <div>
 ---
 name: tips
