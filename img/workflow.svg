@@ -78,8 +78,8 @@
         <path d="m 205.5,145.5 q -10,25 25,25" />
         <path d="m 265.5,185.5 q -10,25 25,25" />
         <!-- Up -->
-        <path d="m 135.5,30.5 q 5,-20 -20,-20" style="stroke-dasharray:5, 3;" />
-        <path d="m 315.5,155.5 q 10,-65 -85,-65" style="stroke-dasharray:5, 3;" />
+        <path d="m 135.5,30.5 q 5,-20 -20,-20" style="stroke-dasharray:5,3;" />
+        <path d="m 315.5,155.5 q 10,-65 -80,-65" style="stroke-dasharray:5, 3;" />
         <path d="m 315.5,155.5 q 35,-155 -200,-145" style="stroke-dasharray:5, 3;" />
 
     </g>
