@@ -44,9 +44,9 @@
         ]]>
     </style>
 
-    <rect x=".5" y=".5" width="110" height="20" rx="4" class="rectangles" />
+    <rect x=".5" y=".5" width="105" height="20" rx="4" class="rectangles" />
     <text x="-4.5" y="-4.5">
-        <tspan x="5.5" y="10">&ldquo;Building blocks&rdquo;</tspan>
+        <tspan x="5.5" y="10"> Building blocks </tspan>
     </text>
     <rect x="60.575" y="35.575" width="114" height="35" rx="4" ry="4" class="rectangles" />
     <text x="-4.5" y="-2.5">
@@ -79,9 +79,9 @@
         <path d="m 265.5,185.5 q -10,25 25,25" />
         <!-- Up -->
         <g class="up">
-            <path d="m 135.5,30.5 q 5,-20 -10,-20" />
+            <path d="m 135.5,30.5 q 5,-20 -15,-20" />
             <path d="m 315.5,155.5 q 10,-65 -80,-65" />
-            <path marker-end="none" d="m 315.5,155.5 q 35,-155 -190,-145" />
+            <path marker-end="none" d="m 315.5,155.5 q 35,-155 -195,-145" />
         </g>
 
     </g>
