@@ -3,11 +3,7 @@
         <marker id="A" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
             <path d="M0 0l10 5-10 5z" stroke="none" class="B" />
         </marker>
-        <!--
-        <style>
-            @import url("https://fonts.googleapis.com/css?family=Noto+Sans:400");
-        </style>
--->
+
         <style>
             @font-face {
                 font-family: "Noto Sans";
@@ -20,67 +16,60 @@
     </defs>
     <style>
         <![CDATA[
-        .B {
-            fill: #000
+        .rectangles {
+            fill: none;
+            stroke: #000;
+            stroke-width: 1;
         }
 
-        .C {
-            fill: none
+        tspan {
+            fill: #000;
+            dominant-baseline: middle;
+            font-size: 12px;
+            font-family: Noto Sans;
+            font-weight: 400;
+
         }
 
-        .D {
-            stroke: #000
+        .arrow {
+            marker-end: url(#A);
+            stroke: #000;
+            fill: none;
         }
 
-        .E {
-            font-weight: 400
-        }
-
-        .F {
-            font-size: 12px
-        }
-
-        .G {
-            dominant-baseline: middle
-        }
-
-        .H {
-            font-family: Noto Sans
-        }
-
-        .I {
-            marker-end: url(#A)
+        .up {
+            stroke-dasharray: 5, 3;
         }
 
         ]]>
     </style>
 
-    <rect x=".5" y=".5" width="100" height="20" rx="4" class="C D" />
-    <text x="-4.5" y="-4.5" class="B F G H">
-        <tspan x="5.5" y="10" font-weight="normal">Topic search</tspan>
+    <rect x=".5" y=".5" width="100" height="20" rx="4" class="rectangles" />
+    <text x="-4.5" y="-4.5">
+        <tspan x="5.5" y="10">Topic search</tspan>
     </text>
-    <rect x="60.575" y="35.575" width="114" height="35" rx="4" ry="4" stroke-width="1.15" class="C D" />
-    <text x="-4.5" y="-2.5" class="B F G H">
-        <tspan x="65.5" y="44.75" font-weight="normal">Select, scan, and</tspan>
-        <tspan x="65.5" dy="14.5" font-weight="normal">select again</tspan>
+    <rect x="60.575" y="35.575" width="114" height="35" rx="4" ry="4" class="rectangles" />
+    <text x="-4.5" y="-2.5">
+        <tspan x="65.5" y="44.75">Select, scan, and</tspan>
+        <tspan x="65.5" dy="14.5">select again</tspan>
     </text>
-    <rect x="120.5" y="80.5" width="105" height="20" rx="4" ry="4" stroke-width="1" class="C D" />
-    <text x="-4.5" y="-4.5" class="B F G H">
-        <tspan x="125.5" y="90" font-weight="normal">Snowball search</tspan>
+    <rect x="120.5" y="80.5" width="105" height="20" rx="4" ry="4" class="rectangles" />
+    <text x="-4.5" y="-4.5">
+        <tspan x="125.5" y="90">Snowball search</tspan>
     </text>
-    <rect x="180.5" y="120.5" width="100" height="20" rx="4" class="C D" />
-    <text x="-4.5" y="-4.5" class="B F G H">
-        <tspan x="185.5" y="130" font-weight="normal">Select</tspan>
+    <rect x="180.5" y="120.5" width="100" height="20" rx="4" class="rectangles" />
+    <text x="-4.5" y="-4.5">
+        <tspan x="185.5" y="130">Select</tspan>
     </text>
-    <rect x="240.5" y="160.5" width="110" height="20" rx="4" ry="4" stroke-width="1.033" class="C D" />
-    <text x="-4.5" y="-4.5" class="B F G H">
-        <tspan x="245.5" y="170" font-weight="normal">Read and select</tspan>
+    <rect x="240.5" y="160.5" width="110" height="20" rx="4" ry="4" class="rectangles" />
+    <text x="-4.5" y="-4.5">
+        <tspan x="245.5" y="170">Read and select</tspan>
     </text>
-    <rect x="300.5" y="200.5" width="100" height="20" rx="4" class="C D" />
-    <text x="-4.5" y="-4.5" class="B F G H">
-        <tspan x="305.5" y="210" font-weight="normal">Reference</tspan>
+    <rect x="300.5" y="200.5" width="100" height="20" rx="4" class="rectangles" />
+    <text x="-4.5" y="-4.5">
+        <tspan x="305.5" y="210">Reference</tspan>
     </text>
-    <g class="I C D">
+    <g class="arrow">
         <!-- Arrows -->
         <!-- Down -->
         <path d="m 25.5,25.5 q -10,25 25,25" />
@@ -89,9 +78,11 @@
         <path d="m 205.5,145.5 q -10,25 25,25" />
         <path d="m 265.5,185.5 q -10,25 25,25" />
         <!-- Up -->
-        <path d="m 135.5,30.5 q 5,-20 -20,-20" style="stroke-dasharray:5,3;" />
-        <path d="m 315.5,155.5 q 10,-65 -80,-65" style="stroke-dasharray:5, 3;" />
-        <path d="m 315.5,155.5 q 35,-155 -200,-145" style="stroke-dasharray:5, 3;" />
+        <g class="up">
+            <path d="m 135.5,30.5 q 5,-20 -20,-20" />
+            <path d="m 315.5,155.5 q 10,-65 -80,-65" />
+            <path d="m 315.5,155.5 q 35,-155 -200,-145" />
+        </g>
 
     </g>
 </svg>
