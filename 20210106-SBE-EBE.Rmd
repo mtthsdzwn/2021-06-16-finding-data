@@ -479,6 +479,7 @@ layout: true
         <p><i>A</i> AND <i>B</i> AND <i>C</i></p>
         <p><i>Brexit</i> AND <i>migration</i> AND &quot;<i>economic growth</i>&quot;</p>
         <p>Combine as many search terms as needed.</p>
+        <p>See <a href="https://libguides.vu.nl/a-all/search-terms">here</a> for more info</p>
     </div>
 </div>
 ---
