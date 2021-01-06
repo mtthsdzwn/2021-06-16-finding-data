@@ -527,7 +527,7 @@ layout: true
 ---
 <div class="card list"><h2>Parentheses <b>(</b>...<b>)</b></h2><p>For grouping: <span style="font-family:monospace">A AND (B OR C)</span></p></div>
 <div class="card list"><h2>Quotes <b>&quot;</b>...<b>&quot;</b></h2><p>For phrases: <span style="font-family:monospace">"labour mobility"</span></p></div>
-<div class="card list"><h2>Wildcards <b>?</b>,<b>&#42;</b></h2><p>For one or more characters: <span style="font-family:monospace">colo?ur</span></p></div>
+<div class="card list"><h2>Wildcards <b>?</b>,<b>&#42;</b></h2><p>For one or more characters: <span style="font-family:monospace">colo?r</span></p></div>
 <div class="card list"><h2>Careful!</h2><p>Exact usage may differ between search engines!</p></div>
 ---
 layout:false
