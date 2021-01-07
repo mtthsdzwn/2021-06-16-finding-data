@@ -20,4 +20,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Copy to index.html
-        run: cp 20210106-SBE-EBE.html index.html
+        run: cp ./20210106-SBE-EBE.html ./index.html
