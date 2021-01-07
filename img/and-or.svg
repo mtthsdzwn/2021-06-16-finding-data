@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 401 221" preserveAspectRatio="xMinYMin">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 2 252 60">
     <defs>
-        <marker id="A" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-            <path d="M0 0l10 5-10 5z" stroke="none" />
+        <marker id="arrow" viewBox="0 0 20 10" refX="1" refY="5" markerWidth="5" markerHeight="10" orient="auto-start-reverse">
+            <path d="M0 0 l 10 5-10 5 z" stroke="none" />
         </marker>
 
         <style>
@@ -16,73 +16,69 @@
     </defs>
     <style>
         <![CDATA[
-        .rectangles {
-            fill: none;
-            stroke: #000;
+        rect {
+            fill: #0089CF;
+            fill-opacity: 0.8;
+            stroke: #0089CF;
             stroke-width: 1;
+            stroke-opacity: 1;
         }
 
-        tspan {
-            fill: #000;
-            dominant-baseline: middle;
-            font-size: 12px;
+        text {
+            text-anchor: left;
             font-family: Noto Sans;
             font-weight: 400;
+        }
+
+        text.inbox {
+            dominant-baseline: middle;
+            font-size: 14px;
+            fill: #fff;
+        }
+
+        text.onarrow {
+            dominant-baseline: alphabetic;
+            font-size: 12px;
+            fill: #000;
 
         }
 
-        .arrow {
-            marker-end: url(#A);
-            stroke: #000;
-            fill: none;
-        }
-
-        .up {
-            stroke-dasharray: 5, 3;
+        path {
+            fill: #0089CF;
+            fill-opacity: 1;
+            stroke: #0089CF;
+            stroke-width: 2;
+            stroke-opacity: 1;
+            marker-start: url(#arrow);
+            marker-end: url(#arrow);
         }
 
         ]]>
     </style>
 
-    <rect x=".5" y=".5" width="105" height="20" rx="4" class="rectangles" />
-    <text x="-4.5" y="-4.5">
-        <tspan x="5.5" y="10"> Building blocks </tspan>
-    </text>
-    <rect x="60.575" y="35.575" width="114" height="35" rx="4" ry="4" class="rectangles" />
-    <text x="-4.5" y="-2.5">
-        <tspan x="65.5" y="44.75">Select, scan, and</tspan>
-        <tspan x="65.5" dy="14.5">select again</tspan>
-    </text>
-    <rect x="120.5" y="80.5" width="105" height="20" rx="4" ry="4" class="rectangles" />
-    <text x="-4.5" y="-4.5">
-        <tspan x="125.5" y="90">Snowball search</tspan>
-    </text>
-    <rect x="180.5" y="120.5" width="100" height="20" rx="4" class="rectangles" />
-    <text x="-4.5" y="-4.5">
-        <tspan x="185.5" y="130">Select</tspan>
-    </text>
-    <rect x="240.5" y="160.5" width="110" height="20" rx="4" ry="4" class="rectangles" />
-    <text x="-4.5" y="-4.5">
-        <tspan x="245.5" y="170">Read and select</tspan>
-    </text>
-    <rect x="300.5" y="200.5" width="100" height="20" rx="4" class="rectangles" />
-    <text x="-4.5" y="-4.5">
-        <tspan x="305.5" y="210">Reference</tspan>
-    </text>
-    <g class="arrow">
-        <!-- Arrows -->
-        <!-- Down -->
-        <path d="m 25.5,25.5 q -10,25 25,25" />
-        <path d="m 85.5,72.5 q -10,20 25,20" />
-        <path d="m 145.5,105.5 q -10,25 25,25" />
-        <path d="m 205.5,145.5 q -10,25 25,25" />
-        <path d="m 265.5,185.5 q -10,25 25,25" />
-        <!-- Up -->
-        <g class="up">
-            <path d="m 135.5,30.5 q 5,-20 -15,-20" />
-            <path d="m 315.5,155.5 q 10,-65 -80,-65" />
-            <path marker-end="none" d="m 315.5,155.5 q 35,-155 -195,-145" />
-        </g>
 
-    </g>
+    <rect x="1" y="23" width="55" height="20" />
+    <text x="4" y="34" class="inbox">
+        Brexit
+    </text>
+
+    <path d="m 64 33.5 h 40" />
+    <text x="69" y="33.5" class="onarrow">
+        AND
+    </text>
+
+    <path d="m 114 12 v 40" />
+    <text x="114" y="17" transform="rotate(90 114,17)" class="onarrow">
+        OR
+    </text>
+
+    <rect x="131" y="7" width="120" height="20" />
+    <text x="133" y="17" class="inbox">
+        migration
+    </text>
+
+    <rect x="131" y="37" width="120" height="20" />
+    <text x="133" y="47" class="inbox">
+        "labo?r mobility"
+    </text>
 </svg>

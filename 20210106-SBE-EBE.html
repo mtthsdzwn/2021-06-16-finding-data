@@ -21,15 +21,16 @@ class: center, middle, inverse, title-slide
 
 
 
-
-# Before we start
-&lt;audio controls&gt;
-  &lt;source src="audio/test.ogg" type="audio/ogg"&gt;
-  &lt;source src="audio/test.mp3" type="audio/mpeg"&gt;
-Your browser does not support the audio element.
-&lt;/audio&gt;
----
 class:inverse
+&lt;!-- # Before we start --&gt;
+&lt;!-- &lt;audio controls&gt; --&gt;
+&lt;!--   &lt;source src="audio/test.ogg" type="audio/ogg"&gt; --&gt;
+&lt;!--   &lt;source src="audio/test.mp3" type="audio/mpeg"&gt; --&gt;
+&lt;!-- Your browser does not support the audio element. --&gt;
+&lt;!-- &lt;/audio&gt; --&gt;
+&lt;!-- --- --&gt;
+
+
 
 # Why do you need information?
 ---
@@ -293,26 +294,12 @@ layout: true
 ---
 &lt;div class="pull-left"&gt;
 
-    &lt;!-- Venn diagram 1:set up --&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 110"&gt;
-        &lt;circle cx="55" cy="55" r="50" style="fill:none; stroke:#0089CF;stroke-width:2" /&gt;
-
-        &lt;text x="55" y="55" style="font-size:.65rem; text-anchor: middle; dominant-baseline: middle"&gt;
-            A:Brexit
-        &lt;/text&gt;
-
-        &lt;circle cx="167" cy="55" r="50" style="fill:none; stroke:#0089CF;stroke-width:2" /&gt;
-
-        &lt;text x="167" y="55" style="font-size:.65rem; text-anchor: middle; dominant-baseline: middle"&gt;
-            B:Migration
-        &lt;/text&gt;
-    &lt;/svg&gt;
-
+&lt;!-- Venn diagram 1:set up --&gt;
+&lt;img src="img/venn-setup.svg"alt="Venn diagram" /&gt;
 &lt;/div&gt;
 
 &lt;div class="pull-right"&gt;
-
-    &lt;div class="card switch right" style="width:100%;"&gt;
+    &lt;div class="card switch" style="width:100%;"&gt;
         &lt;h2&gt;Example:&lt;/h2&gt;
         &lt;p&gt;How will &lt;em&gt;Brexit&lt;/em&gt; affect &lt;em&gt;migration&lt;/em&gt; patterns?&lt;/p&gt;
     &lt;/div&gt;
@@ -322,26 +309,11 @@ layout: true
 
 &lt;div class="pull-left"&gt;
     &lt;!-- Venn diagram 2:A AND B --&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 110"&gt;
-        &lt;circle cx="79" cy="55" r="50" style="fill:none; stroke:#0089CF;stroke-width:2;" /&gt;
-
-        &lt;circle cx="143" cy="55" r="50" style="fill:none; stroke:#0089CF;stroke-width:2;" /&gt;
-
-        &lt;text x="69" y="55" style="font-size:.65rem; fill:#000000;text-anchor:middle; dominant-baseline:middle;"&gt;
-            A
-        &lt;/text&gt;
-
-        &lt;text x="153" y="55" style="font-size:.65rem; fill:#000000;text-anchor:middle; dominant-baseline:middle;"&gt;
-            B
-        &lt;/text&gt;
-
-        &lt;path d="m 108.4236,89.437941 c -7.26737,-7.326681 -12.019366,-16.6304 -13.696252,-26.815277 -0.652872,-3.965339 -0.652872,-11.279989 0,-15.245328 1.677215,-10.186874 6.440672,-19.515688 13.716792,-26.863111 l 2.50908,-2.533668 2.11058,2.081567 c 6.61989,6.528884 11.13458,14.377824 13.35059,23.210446 1.81282,7.225601 1.81282,16.229259 0,23.454859 -2.21497,8.828479 -6.73137,16.682354 -13.34279,23.202691 l -2.10278,2.073812 z" style="fill:#0089CF; stroke:#0089CF;stroke-width:2;" /&gt;
-
-    &lt;/svg&gt;
+&lt;img src="img/venn-and.svg"&gt;
 &lt;/div&gt;
 
 &lt;div class="pull-right"&gt;
-    &lt;div class="card switch right" style="width:100%;"&gt;
+    &lt;div class="card switch" style="width:100%;"&gt;
         &lt;h2&gt;&amp;ldquo;Boolean operators&amp;rdquo;: &lt;b&gt;AND&lt;/b&gt;&lt;/h2&gt;
         &lt;p&gt;&lt;i&gt;A&lt;/i&gt; AND &lt;i&gt;B&lt;/i&gt;&lt;/p&gt;
         &lt;p&gt;&lt;i&gt;Brexit&lt;/i&gt; AND &lt;i&gt;migration&lt;/i&gt;&lt;/p&gt;
@@ -353,20 +325,11 @@ layout: true
 
 &lt;div class="pull-left"&gt;
     &lt;!-- Venn diagram 3:A OR B --&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 110"&gt;
-        &lt;circle cx="79" cy="55" r="50" style="fill:#0089CF; stroke:#0089CF;stroke-width:2;" /&gt;
-        &lt;circle cx="143" cy="55" r="50" style="fill:#0089CF; stroke:#0089CF;stroke-width:2;" /&gt;
-        &lt;text x="69" y="55" style="font-size:.65rem; fill:white;text-anchor:middle; dominant-baseline:middle;"&gt;
-            A
-        &lt;/text&gt;
-        &lt;text x="153" y="55" style="font-size:.65rem; fill:white;text-anchor:middle; dominant-baseline:middle;"&gt;
-            B
-        &lt;/text&gt;
-    &lt;/svg&gt;
+&lt;img src="img/venn-or.svg"&gt;
 &lt;/div&gt;
 
 &lt;div class="pull-right"&gt;
-    &lt;div class="card switch right" style="width:100%;"&gt;
+    &lt;div class="card switch" style="width:100%;"&gt;
         &lt;h2&gt;&amp;ldquo;Boolean operators&amp;rdquo;: &lt;b&gt;OR&lt;/b&gt;&lt;/h2&gt;
         &lt;p&gt;&lt;i&gt;A&lt;/i&gt; OR &lt;i&gt;B&lt;/i&gt;&lt;/p&gt;
         &lt;p&gt;&lt;i&gt;Brexit&lt;/i&gt; OR &lt;i&gt;migration&lt;/i&gt;&lt;/p&gt;
@@ -377,29 +340,12 @@ layout: true
 ---
 &lt;div class="pull-left"&gt;
     &lt;!-- Venn diagram 4:A AND B AND C --&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 155"&gt;
-
-        &lt;circle cx="54" cy="54" r="50" style="fill:none; stroke:#0089CF;stroke-width:2;" /&gt;
-        &lt;circle cx="118" cy="54" r="50" style="fill:none; stroke:#0089CF;stroke-width:2;" /&gt;
-        &lt;circle cx="86" cy="100" r="50" style="fill:none; stroke:#0089CF;stroke-width:2;" /&gt;
-        &lt;text x="45" y="54" style="font-size:.65rem; fill:#000000;text-anchor:middle; dominant-baseline:middle;"&gt;
-            A
-        &lt;/text&gt;
-        &lt;text x="127" y="54" style="font-size:.65rem; fill:#000000;text-anchor:middle; dominant-baseline:middle;"&gt;
-            B
-        &lt;/text&gt;
-        &lt;text x="86" y="109" style="font-size:.65rem; fill:#000000;text-anchor:middle; dominant-baseline:middle;"&gt;
-            C
-        &lt;/text&gt;
-        &lt;path d="M 83.2594,88.287999 C 77.137814,82.010888 72.950815,74.689762 70.819746,66.5368 69.748383,62.438017 69.39371,60.076543 69.361399,56.826874 l -0.02729,-2.744388 2.27655,-0.728637 c 9.009037,-2.883448 19.827897,-2.883159 28.828911,7.72e-4 l 2.27655,0.729408 -0.0364,2.42157 c -0.16694,11.097295 -5.524178,23.284926 -14.000179,31.850182 -1.286251,1.299792 -2.498398,2.363409 -2.69366,2.363585 -0.195263,1.79e-4 -1.422171,-1.093936 -2.726464,-2.431367 z" style="fill:#0089CF; stroke:#0089CF;stroke-width:2;" /&gt;
-
-    &lt;/svg&gt;
-
+&lt;img src="img/venn-more.svg"&gt;
 &lt;/div&gt;
 
 &lt;div class="pull-right"&gt;
 
-    &lt;div class="card switch right" style="width:100%;"&gt;
+    &lt;div class="card switch" style="width:100%;"&gt;
         &lt;h2&gt;&amp;ldquo;Boolean operators&amp;rdquo;&lt;/h2&gt;
         &lt;p&gt;&lt;i&gt;A&lt;/i&gt; AND &lt;i&gt;B&lt;/i&gt; AND &lt;i&gt;C&lt;/i&gt;&lt;/p&gt;
         &lt;p&gt;&lt;i&gt;Brexit&lt;/i&gt; AND &lt;i&gt;migration&lt;/i&gt; AND &amp;quot;&lt;i&gt;economic growth&lt;/i&gt;&amp;quot;&lt;/p&gt;
@@ -409,43 +355,9 @@ layout: true
 &lt;/div&gt;
 ---
 &lt;!-- Diagram: How to use AND and OR --&gt;
-&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 75"&gt;
-    &lt;defs&gt;
-        &lt;marker id="arrow" viewBox="0 0 20 10" refX="1" refY="5" markerUnits="strokeWidth" markerWidth="6" markerHeight="6" orient="auto-start-reverse"&gt;
-            &lt;path d="M 0 0 L 10 5 L 0 10 z" style="fill:#0089CF; stroke:none;" &gt;
-        &lt;/marker&gt;
-&lt;/defs&gt;
-    &lt;g id="g-brexit"&gt;
-        &lt;rect x="1" y="23.5" width="50" height="20" style="fill: #0089CF; fill-opacity:0.8; stroke: #0089CF; stroke-width:1; stroke-opacity: 1;" /&gt;
-        &lt;text x="6" y="33.5" style="font-size: .6rem; fill-opacity: 1; stroke: none;fill: white; text-anchor: start; dominant-baseline: middle;"&gt;
-            Brexit
-        &lt;/text&gt;
-    &lt;/g&gt;
-    &lt;g id="g-and"&gt;
-        &lt;path d="m 61 33.5 h 40" style="fill: #0089CF;fill-opacity: 1;stroke: #0089CF;stroke-width: 2;stroke-opacity: 1;marker-start: url(#arrow);marker-end: url(#arrow);" /&gt;
-        &lt;text x="81" y="33.5" style="font-size: .6rem;fill-opacity: 1;stroke: none;fill:#000000;text-anchor: middle;dominant-baseline: alphabetic;"&gt;
-            AND
-        &lt;/text&gt;
-    &lt;/g&gt;
-    &lt;g id="g-or"&gt;
-        &lt;path d="m 114 10 v 40" style="fill: #0089CF;fill-opacity: 1;stroke: #0089CF;stroke-width: 2;stroke-opacity: 1;marker-start: url(#arrow);marker-end: url(#arrow);" /&gt;
-        &lt;text x="114" y="25" transform="rotate(90 114,25)" style="font-size: .6rem;fill-opacity: 1;stroke: none;fill:#000000;text-anchor: middle;dominant-baseline: alphabetic;"&gt;
-            OR
-        &lt;/text&gt;
-    &lt;/g&gt;
-    &lt;g id="g-migration"&gt;
-        &lt;rect x="131" y="5" width="120" height="20" style="fill: #0089CF; fill-opacity:0.8; stroke: #0089CF; stroke-width:1; stroke-opacity: 1;" /&gt;
-        &lt;text x="133" y="15" style="font-size: .6rem; fill-opacity: 1; stroke: none;fill: white; text-anchor: start; dominant-baseline: middle;"&gt;
-            migration
-        &lt;/text&gt;
-    &lt;/g&gt;
-    &lt;g id="g-mobility"&gt;
-        &lt;rect x="131" y="42" width="120" height="20" style="fill: #0089CF; fill-opacity:0.8; stroke: #0089CF; stroke-width:1; stroke-opacity: 1;" /&gt;
-        &lt;text x="133" y="52" style="font-size: .6rem; fill-opacity: 1; stroke: none;fill: white; text-anchor: start; dominant-baseline: middle;"&gt;
-            "labo?r mobility"
-        &lt;/text&gt;
-    &lt;/g&gt;
-&lt;/svg&gt;
+&lt;div style="display:flex; justify-content:center;"&gt;
+&lt;img src="img/and-or.svg" style="width: 90%;"&gt;
+&lt;/div&gt;
 
 - Use &amp;ldquo;AND&amp;rdquo; to combine the key concepts of your research question.
 - Use &amp;ldquo;OR&amp;rdquo; to combine the different terms that can be used to describe those concepts.&lt;br&gt;Different authors can use different words to describe similar concepts!
@@ -489,7 +401,7 @@ template: snowball
 # A suggested workflow
 
 &lt;div style="display:flex; justify-content:center; align-items: center;"&gt;
-&lt;img src="img/workflow.svg" alt="" width="80%"&gt;
+&lt;img src="img/workflow.svg" alt="A suggested workflow" width="80%"&gt;
 &lt;div&gt;
 ---
 name: tips
