@@ -1,8 +1,8 @@
 ---
-title: "Finding Information"
+title: "Working with Data"
 author: 
   - "Matthijs de Zwaan"
-date: '6 januari 2021'
+date: '16 June 2021'
 output:
   xaringan::moon_reader:
     yolo: false
@@ -96,18 +96,65 @@ style_mono_accent(
 )
 )
 ```
-class:inverse
-<!-- # Before we start -->
-<!-- <audio controls> -->
-<!--   <source src="audio/test.ogg" type="audio/ogg"> -->
-<!--   <source src="audio/test.mp3" type="audio/mpeg"> -->
-<!-- Your browser does not support the audio element. -->
-<!-- </audio> -->
-<!-- --- -->
 
+# Agenda
 
+<div class="card list" style="margin-top:80px;margin-bottom:50px;">
+    <h2>Finding data</h2>
+    <p>From research question to data query</p>
+    <p>Available data sources</p>
+    </div>
 
-# Why do you need information?
+<div class="card list">
+    <h2>Working with data</h2>
+    <p>Organizing data</p>
+    <p>Combining data sources</p>
+    <p>Firm identifiers</p>
+</div>
+---
+class: inverse
+# Finding data
+
+---
+
+# Finding data: A workflow
+
+<div class="card small" style="margin-top:100px;">
+    1. Think
+</div>
+<div class="card small" style="margin-top:200px;">
+    2. Act
+</div>
+
+---
+# What data do I need?
+
+<div 
+ style="display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 450px;
+        width: 400px;
+        ">
+
+<div style="text-align: center; background-color: rgba(0, 137, 207, 0.1);">
+    Research question
+</div>
+<div style="text-align: center;">
+    Key elements
+</div>
+<div style="text-align: center;">
+    Operationalisation
+</div>
+<div style="text-align: center;">
+    Scope
+</div>
+</div>
+---
+class: inverse
+# working with data
+
 ---
 
 # Why do you need information?
