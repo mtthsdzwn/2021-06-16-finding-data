@@ -3,4 +3,5 @@
 .RData
 .Ruserdata
 20210106-SBE-EBE.html
+packrat/lib*/
 .DS_Store
